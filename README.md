@@ -3,7 +3,7 @@ Code for running the bifurcation diagrams of seagrass-soil model
 
 ***Antoine Le Vilain***
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13936912.svg)](https://doi.org/10.5281/zenodo.13936912)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14198385.svg)](https://doi.org/10.5281/zenodo.14198385)
 
 <ins>Contact</ins>: antoine.levilain18@gmail.com
 
