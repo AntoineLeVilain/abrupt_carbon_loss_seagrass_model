@@ -1,6 +1,6 @@
 # Working directory
 
-setwd('figure2/figure2abc') # set your own working directory
+setwd('/figure3/figure3abc') # set your own working directory
 
 # Requirements
 
@@ -79,6 +79,6 @@ plot_3 <- ggplot() + geom_point(data = seagrass3, aes(x = pmax, y = sh, color = 
 # Save plots 
 plot <- grid.arrange(plot_2, plot_3, plot_1, ncol = 3)
 
-ggsave("figure2a.png", 
+ggsave("figure3a.png", 
        plot, 
        width = 15, height = 3)

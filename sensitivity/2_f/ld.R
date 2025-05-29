@@ -1,6 +1,6 @@
 #ld_deter_ma
 
-setwd('/Users/antoinelevilain/Desktop/doctorat/my_articles/second/second_article/figures/sens_all_the_way/2_f') # set your working directory
+setwd('/sensitivity/2_f') # set your working directory
 
 # Requirements
 package_list <- c("sensobol", "data.table", "ggplot2", "deSolve", "foreach", "parallel", "readxl", "doParallel", "rootSolve", "dplyr", "rlang", "pracma", "matrixcalc", "data.table", "nleqslv")

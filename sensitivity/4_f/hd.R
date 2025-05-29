@@ -1,6 +1,6 @@
 #hd_deter_ma
 
-setwd('/Users/antoinelevilain/Desktop/doctorat/my_articles/second/abrupt_carbon_losses_seagrass_model/sensitivity/4_f') # set your working directory
+setwd('/sensitivity/4_f') # set your working directory
 
 # Requirements
 package_list <- c("sensobol", "data.table", "ggplot2", "deSolve", "foreach", "parallel", "readxl", "doParallel", "rootSolve", "dplyr", "rlang", "pracma", "matrixcalc", "data.table", "nleqslv")

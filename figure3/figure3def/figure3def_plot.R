@@ -1,6 +1,6 @@
 # working directory
 
-setwd('figure2/figure2def') # set your own working directory
+setwd('/figure3/figure3def') # set your own working directory
 
 # requirements
 
@@ -17,6 +17,9 @@ for (package in package_list){
 for (par1 in c("ma", "pmax", "temp")){
   
   assign(par1, read.csv(paste0(par1, "_sh.csv"), header = TRUE))
+  
+  # Choose 3 SH values
+  assign(par1, get(par1) %>% filter(sh == 22.7 | sh == 100 | sh == 10000))
   
   # Define your start and end colors
   color_start = "#FF0000"  # Red
@@ -73,9 +76,19 @@ for (par1 in c("ma", "pmax", "temp")){
       
       assign(paste0("plot_", par1, "_S"), get(paste0("plot_", par1, "_S")) + 
                geom_line(data = get(paste0(par1, j, "bare")), aes(x = get(par1), y = get("S_bare")), 
-                         color = gradient_colors[which(unique(get(par1)$sh) == j)], size = 1, linetype = "solid"))
+                         color = gradient_colors[which(unique(get(par1)$sh) == j)], size = 2, linetype = "solid", alpha = 0.6))
       
     } else {
+      
+      if(j == 100){
+        
+        line_size = 1.5
+        
+      } else {
+        
+        line_size = 0.5
+        
+      }
       
       assign(paste0("plot_", par1, "_S"), get(paste0("plot_", par1, "_S")) + 
                geom_line(data = get(paste0(par1, j, "seagrass")), 
@@ -89,7 +102,7 @@ for (par1 in c("ma", "pmax", "temp")){
       
       assign(paste0("plot_", par1, "_S"), get(paste0("plot_", par1, "_S")) + 
                geom_line(data = get(paste0(par1, j, "bare")), aes(x = get(par1), y = get("S_bare")), 
-                         color = gradient_colors[which(unique(get(par1)$sh) == j)], size = 1, linetype = "solid"))
+                         color = gradient_colors[which(unique(get(par1)$sh) == j)], size = line_size, linetype = "solid", alpha = 0.6))
       
     }
     

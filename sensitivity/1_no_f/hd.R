@@ -1,6 +1,6 @@
 #hd_healthy
 
-setwd('/Users/antoinelevilain/Desktop/doctorat/my_articles/second/second_article/abrupt_carbon_losses_seagrass_model/sensitivity/1_no_f') # set your working directory
+setwd('/sensitivity/1_no_f') # set your working directory
 
 # Requirements
 package_list <- c("sensobol", "data.table", "ggplot2", "deSolve", "foreach", "parallel", "readxl", "doParallel", "rootSolve", "dplyr", "rlang", "pracma", "matrixcalc", "data.table", "nleqslv")
