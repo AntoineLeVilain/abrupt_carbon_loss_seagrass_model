@@ -3,7 +3,7 @@ Code for running the bifurcation diagrams and the sensitivity analysis of seagra
 
 ***Antoine Le Vilain***
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14244913.svg)](https://doi.org/10.5281/zenodo.14244913)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15556277.svg)](https://doi.org/10.5281/zenodo.15556277)
 
 <ins>Contact</ins>: antoine.levilain18@gmail.com
 
